@@ -1,0 +1,97 @@
+/* General Styles for the Sidebar */
+.sidebar-container {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: none;
+  border-radius: 10px 10px 0 0; /* Ensure the top corners are rounded */
+  position: fixed; /* Ensure it stays fixed at the bottom */
+  bottom: 0;
+  left: 0;
+  z-index: 9999; /* Ensure it stays on top */
+}
+
+.sidebar-icon {
+  color: #6c757d;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px; /* Add spacing between icons */
+}
+
+.sidebar-icon.active,
+.sidebar-icon:hover {
+  color: #007bff;
+  transform: scale(1.05); /* Slightly decrease scale effect */
+}
+
+.sidebar-icon .icon {
+  font-size: 1.25rem; /* Slightly decrease icon size */
+  margin-bottom: 4px;
+}
+
+.sidebar-icon .text {
+  font-size: 0.75rem; /* Slightly decrease text size */
+  color: #333;
+}
+
+/* Layout adjustments for larger screens */
+@media (min-width: 1024px) {
+  .sidebar-container {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    border-radius: 0; /* Remove rounded corners for larger screens */
+    position: relative; /* Ensure it doesn't overlap content on larger screens */
+  }
+
+  .sidebar-icon {
+    margin: 40px 0; /* Increase spacing between icons */
+  }
+
+  .sidebar-icon .icon {
+    font-size: 1.5rem; /* Adjust icon size for larger screens */
+    margin-bottom: 8px;
+  }
+
+  .sidebar-icon .text {
+    font-size: 0.875rem; /* Adjust text size for larger screens */
+  }
+}
+
+/* Layout adjustments for smaller screens (mobile) */
+@media (max-width: 1024px) {
+  .sidebar-container {
+    height: 60px; /* Height for the bottom bar */
+  }
+
+  .sidebar-icon {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column; /* Ensure text is below the icon */
+    align-items: center;
+  }
+
+  .sidebar-icon .icon {
+    font-size: 1.25rem;
+    margin-bottom: 4px; /* Space between icon and text */
+  }
+
+  .sidebar-icon .text {
+    font-size: 0.75rem; /* Ensure text is readable on mobile */
+    display: block; /* Make sure text is visible */
+    text-align: center;
+  }
+
+  /* Ensure the content does not hide behind the bottom sidebar */
+  .main-content {
+    padding-bottom: 60px; /* Adjust space for the bottom sidebar */
+  }
+}

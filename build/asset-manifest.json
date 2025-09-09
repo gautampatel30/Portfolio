@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Portolio/static/css/main.4e15811e.css",
+    "main.js": "/Portolio/static/js/main.72f9f781.js",
+    "static/media/emoji.png": "/Portolio/static/media/emoji.117ecba75d27cfbc2046.png",
+    "static/media/newProfileImage.jpg": "/Portolio/static/media/newProfileImage.baac3ff6a28f5775bea0.jpg",
+    "static/media/testimonial.png": "/Portolio/static/media/testimonial.3d007bdf5ee27be38714.png",
+    "static/media/technicalexpertise.png": "/Portolio/static/media/technicalexpertise.685fb25efa6c6fceb531.png",
+    "static/media/funfact.png": "/Portolio/static/media/funfact.46ed4ada54b0fdec4c09.png",
+    "static/media/certification.jpg": "/Portolio/static/media/certification.446cfefeb33061cba0f0.jpg",
+    "static/media/figma.png": "/Portolio/static/media/figma.ad1480bee66020f0cd06.png",
+    "index.html": "/Portolio/index.html",
+    "main.4e15811e.css.map": "/Portolio/static/css/main.4e15811e.css.map",
+    "main.72f9f781.js.map": "/Portolio/static/js/main.72f9f781.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e15811e.css",
+    "static/js/main.72f9f781.js"
+  ]
+}
